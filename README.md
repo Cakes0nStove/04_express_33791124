@@ -19,14 +19,14 @@
 
 
 
-<h3>Overview</h3>
+<h2>Overview</h2>
 This project is a simple Node.js web server built using the Express framework. It recreates the “Simple Server” from previous labs but utilises the Express module.
 Additional routes have been added, and the app has been deployed to a virtual machine for production to run forever.
 
-<h3>What is Express?</h3>
+<h2>What is Express?</h2>
 Express is a lightweight and flexible Node.js framework used to build web applications and APIs. It simplifies server creation compared to the raw Node.js http module and allows for modular code organization using middleware and routing.
 
-<h3>Installation</h3>
+<h2>Installation</h2>
 <h4>1. Clone Repository</h4>
 git clone https://github.com/<your-username>/04_express_12345678.git
 cd 04_express_12345678
@@ -37,8 +37,26 @@ node index.js
 <h4>4. Open your browser and visit</h4>
 http://localhost:8000
 
+<h2>Routes</h2>
 
-<h3>Final Result Page</h3>
+| Route | Description | Example Output |
+|--------|--------------|----------------|
+| `/` | Default home route that displays a “Hello World!” message. | `<h1>Hello World!</h1>` |
+| `/about` | Displays an About page. | `<h1>This is the about page</h1>` |
+| `/contact` | Displays your contact details. | `<h1>Contact Page: axavi001@campus.goldsmiths.ac.uk</h1>` |
+| `/date` | Shows the current date and time using JavaScript’s `Date()` object. | `Thu Oct 23 2025 20:15:43 GMT+0000 (Greenwich Mean Time)` |
+| `/:username` | Dynamic route that greets the user by name. | `/alex` → `<h1>Welcome, alex!</h1>` |
+| `/chain` | Demonstrates middleware chaining — the first function sets a custom message, and the second sends it as a response. | `<h1>Second function runs — response sent!</h1><p>Hello from the first handler!</p>` |
+| `/file` | Sends the `a.html` file stored in the project directory using `res.sendFile()`. | Displays the contents of `a.html`. |
+
+
+<h2>Custom User Page</h2>
+<img src="lab4(2).jpg" alt="Screenshot of Lab 4 Work" width="500">
+
+If you input into the link, http://localhost:8000/USER
+(USER = any name youd like), you will get a custom output
+
+<h2>Final Result Page</h2>
 
 <img src="lab4.jpg" alt="Screenshot of Lab 4 Work" width="500">
 

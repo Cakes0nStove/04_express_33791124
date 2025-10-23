@@ -14,7 +14,7 @@ router.get('/date', (req, res) => {const current_date = new Date();
     //converts the date to a readable string and sends it a an HTML response.
     res.send(current_date.toString());
 });
-router.get('/welcome/:username',(req, res) => {
+router.get('/:username',(req, res) => {
     const user = req.params.username;
     res.send(`<h1>Welcome, ${user}!</h1>`);
 });
