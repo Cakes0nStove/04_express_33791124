@@ -4,7 +4,7 @@ const router = express.Router();
 const path = require('path');
 // Handles the routes
 // Two parameters, the req(incoming request) and res (the response we send back).
-router.get("/", (req, res) => res.send("Hello World!")); 
+router.get("/", (req, res) => res.send("<h1>Hello World!</h1>")); 
 //handles the 'about' router and sends a html message back as a response.
 router.get("/about", (req, res) => res.send ("<h1>This is the about page</h1>"));
 //similar to about where it handles the 'contact' route and sends html response.

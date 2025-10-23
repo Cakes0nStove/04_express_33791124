@@ -1,4 +1,0 @@
-- browser their document to make sue everything is correct
-- enure that the code is running forever
-- create a readme file
-- do the .gitignore file 
