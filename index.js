@@ -8,6 +8,7 @@ const port = 8000;
 //loads the router handles, imports the route/main.js file,
 // which contains all the route handles for specific URLs
 const mainRoutes = require("./routes/main");
+app.use('/usr/278', mainRoutes);
 // uses the imported routes in the express app, '/ sets the base path for these routes
 // so any route will start from the root
 app.use('/', mainRoutes);
